@@ -1,0 +1,23 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <!-- First changeSet for creating the database tables -->
+    <changeSet id="1" author="denisw">
+        <createTable tableName="SAMPLE">
+            <column name="UUID" type="varchar(36)">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="VALUE1" type="varchar(250)"/>
+            <column name="VALUE2" type="integer"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="2" author="denisw">
+        <addColumn tableName="SAMPLE">
+            <column name="VALUE3" type="date"/>
+        </addColumn>
+    </changeSet>
+
+</databaseChangeLog>
