@@ -40,6 +40,10 @@ public class SampleInfoResponse {
         return fileSize;
     }
 
+    public long getFileSizeMB() {
+        return fileSize / 1024 / 1024;
+    }
+
     public void setFileSize(long fileSize) {
         this.fileSize = fileSize;
     }

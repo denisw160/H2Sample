@@ -66,8 +66,8 @@ public class GenerateDataJobImpl implements GenerateDataJob {
      */
     private int getRandomCount() {
         Random r = new Random();
-        int low = 10;
-        int high = 100;
+        int low = 100;
+        int high = 10000;
         return r.nextInt(high - low) + low;
     }
 

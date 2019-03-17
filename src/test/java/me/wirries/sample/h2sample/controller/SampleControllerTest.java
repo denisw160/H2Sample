@@ -23,6 +23,7 @@ public class SampleControllerTest extends AbstractApplicationTests {
         assertTrue(info.getLastCount() >= 0);
         assertTrue(info.getLastDuration() >= 0);
         assertTrue(info.getFileSize() >= 0);
+        assertTrue(info.getFileSizeMB() >= 0);
     }
 
 }
